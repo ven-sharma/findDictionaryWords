@@ -3,8 +3,7 @@ package QATest.QATest;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class App 
-{
+public class App{
     public static void main( String[] args ) throws IOException
     {
     	Scanner s=new Scanner(System.in);

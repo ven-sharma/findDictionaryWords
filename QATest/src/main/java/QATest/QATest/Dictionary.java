@@ -23,6 +23,9 @@ public class Dictionary {
 		BufferedReader read = new BufferedReader(new InputStreamReader(url.openStream()));
 		
 		for(String dWord = read.readLine();dWord!=null;dWord = read.readLine()) {
+			if(dWord.equalsIgnoreCase(word)) {
+				val = true;
+			}
 			Map<Character, Integer> dWordCounts = getLetterCount(dWord);
 			boolean status = true;
 			for(Character c:dWordCounts.keySet()) {
@@ -35,9 +38,6 @@ public class Dictionary {
 			}
 			if(status) {
 				listOfAllEnglishWords.add(dWord);
-			}
-			if(!listOfAllEnglishWords.isEmpty()) {
-				val = true;
 			}
 		}
 		
