@@ -41,7 +41,7 @@ public class Dictionary {
 			}
 		}
 		
-		if(val) {
+		if(!listOfAllEnglishWords.isEmpty()) {
 			System.out.println("All posible dictionary words from the given word are :");
 			for(String s: listOfAllEnglishWords) {
 				System.out.println(s);
